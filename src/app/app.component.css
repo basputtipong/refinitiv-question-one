@@ -1,0 +1,27 @@
+.container{
+  display: grid;
+  grid-template-rows: 50vh 50vh 50vh;
+}
+.column{
+  border-bottom: 1px solid #000000;
+}
+h2{
+  margin-top: 0px;
+}
+@media only screen and (min-width: 600px){
+  .container{
+    grid-column-gap: 0px;
+    grid-template-columns: 202px minmax(102px, auto) 302px;
+    grid-template-rows: none;
+    position:absolute;
+    top:5px;
+    right:0px;
+    bottom:5px;
+    left:5px;
+  }
+  .column{
+    border-top: 1px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: none;
+  }
+}

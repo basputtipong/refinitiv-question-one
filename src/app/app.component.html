@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="column column-one">
+    <input type="number" (keyup)="onEnter($event)">
+  </div>
+  <div class="column column-two">
+    <select [(ngModel)]="chosenOption" (ngModelChange)="selectType()">
+      <option *ngFor="let option of options" [ngValue]="option.value">{{option.name}}</option>
+    </select>
+  </div>
+  <div class="column column-three">
+    <h2>{{ output }}</h2>
+  </div>
+</div>
