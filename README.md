@@ -1,4 +1,4 @@
-# QuestionOne
+# refinitiv-question-one
 
 This project can verify the prime number and the fibonacci number by typing integer and select which type of number that you want to verify.<br>
 The result will be show on the right column with true or false.
